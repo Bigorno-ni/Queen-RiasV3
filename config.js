@@ -2,8 +2,8 @@ require('dotenv').config(); // Load environment variables
 
 module.exports = {
     prefix: process.env.PREFIX || '.', // Command prefix
-    ownerName: process.env.OWNER_NAME || 'Toxxic', // Owner name
-    ownerNumber: process.env.OWNER_NUMBER || '2348165846414', // Your WhatsApp number
+    ownerName: process.env.OWNER_NAME || 'NOX', // Owner name
+    ownerNumber: process.env.OWNER_NUMBER || '24104130245', // Your WhatsApp number
     mode: process.env.MODE || 'public', // Bot mode: 'public' or 'private'
     region: process.env.REGION || 'Nigeria', // Region
     botName: process.env.BOT_NAME || 'Rias Gremory V3', // Bot name
@@ -11,8 +11,8 @@ module.exports = {
     exifAuthor: process.env.EXIF_AUTHOR || 'Toxxic', // Author of the sticker pack
     timeZone: process.env.TIME_ZONE || 'Africa/Lagos', // Time zone
     presenceStatus: process.env.PRESENCE_STATUS || 'recording', // Bot presence status
-    autoRead: process.env.AUTO_READ === 'true', // Auto-read messages (true or false)
-    autoViewStatus: process.env.AUTO_VIEW_STATUS === 'true', // Auto-view statuses (true or false)
+    autoRead: process.env.AUTO_READ === 'false', // Auto-read messages (true or false)
+    autoViewStatus: process.env.AUTO_VIEW_STATUS === 'false', // Auto-view statuses (true or false)
     autoReact: process.env.AUTO_REACT === 'true', // Auto-react (true or false)
-    sessionId: process.env.SESSION_ID || ''// Add Your Session ID here
+    sessionId: process.env.SESSION_ID |eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSUdqSXh2YWdVUDBYaGVrUmh4SUkwbkNVYXZvUmN6RWVZTUh4SlA4RWlsQT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoid1JsVFh1L0E2WG0zSDBGWlFOWEhjNUFqQ1cyN3BqNG5TTkRJQnZVR293QT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJ3SzJDaEhQbXlXTjlBSVFTRWdCMnhWbFVzRTBibys5NDBGSjE4aXNudEY0PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJsdndBTHlPcDNaYjc0N001YUdLRjJPR3F4QlRrbDlVZEMxVVJ5b1ErNVdnPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IklIczNuenQ4eUE1Q0lVT3ZPdHB6eFFaR1plWlE1THpqK0FCU1BrbFBCbnc9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik5TSkN2Mk1abW1wOXQvb0VLYXhrNS9Kc2RRaVlRQytEZ2wxakxIV2c5eUU9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNkN4bzdVeER3R0I3WWJRLzE5Q2pjc1JOdGl0akh4T3RNSXdOUjlpYjdXOD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoickRTWmsxL1lyREtWekU0QUk5emNscVNXTUZCeWRONHVZbS8xbEZQUU1pND0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNacEpuMmg0VkV5NitDVFkrNjRxa2JDbGovQ1c1SWxwQXFpcTVlb1A1bVBMWjl1cTllTm1zR21IbHA3eGFrODViWHovWWUrS1hzZjN1QzNXcE91T0JBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTYwLCJhZHZTZWNyZXRLZXkiOiJkWnl0Q0RKS2FSQ1dBeStkbm55Q01oWXpYTTRiakNJT0JQa3pGdGI4YzI0PSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwicmVnaXN0ZXJlZCI6dHJ1ZSwicGFpcmluZ0NvZGUiOiJKV1JUUkZGUiIsIm1lIjp7ImlkIjoiMjQxMDQxMzAyNDU6NTVAcy53aGF0c2FwcC5uZXQiLCJsaWQiOiIyMjIyOTQ5MDc2MTMyODA6NTVAbGlkIn0sImFjY291bnQiOnsiZGV0YWlscyI6IkNKRHZ2eGtRNnNyaHV3WVlEeUFBS0FBPSIsImFjY291bnRTaWduYXR1cmVLZXkiOiJ6eEZXb2lxd0NOR2VYeWp4YUZ1TzVoaWpEdVJ6STVFZHc4dUhPV3RSRGpnPSIsImFjY291bnRTaWduYXR1cmUiOiJ3UitPanlGZEIyelI5WHlURzVBR3ZtdkhUMk9sNEJva0pCZVpZNDlpRFltM1hQMHZjeXpzUnpCb2REayt2MEdKVXhpYjM1MXZKKzJjeTdMQ3RyajBEZz09IiwiZGV2aWNlU2lnbmF0dXJlIjoid0JCakxxNkhNQnZyMTFaTHFmci9Sbml0RTBKM2xqdjY3Q25Vbnp3S3dJS1NSZG5VOU9DaU81NitjZVM1ZGw0VlRvWWhmRVFVNVpHOGF5cHVzdk10Q3c9PSJ9LCJzaWduYWxJZGVudGl0aWVzIjpbeyJpZGVudGlmaWVyIjp7Im5hbWUiOiIyNDEwNDEzMDI0NTo1NUBzLndoYXRzYXBwLm5ldCIsImRldmljZUlkIjowfSwiaWRlbnRpZmllcktleSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkJjOFJWcUlxc0FqUm5sOG84V2hianVZWW93N2tjeU9SSGNQTGh6bHJVUTQ0In19XSwicGxhdGZvcm0iOiJhbmRyb2lkIiwicm91dGluZ0luZm8iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJDQklJQ0E9PSJ9LCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MzU5NDM1NDUsImxhc3RQcm9wSGFzaCI6IjN4WFdZWiIsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBUGZWIn0=| ''// Add Your Session ID here
 };
